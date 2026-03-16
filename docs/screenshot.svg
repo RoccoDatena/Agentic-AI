@@ -1,0 +1,30 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e7f1ff" />
+      <stop offset="55%" stop-color="#f9f3e7" />
+      <stop offset="100%" stop-color="#f6f6f6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="70" y="70" width="1060" height="490" rx="26" fill="#ffffff" opacity="0.9" stroke="#d9e4ec" />
+  <text x="110" y="150" font-family="'Space Grotesk', Arial, sans-serif" font-size="46" fill="#10212b">Meeting Notes Agent</text>
+  <text x="110" y="200" font-family="'Space Grotesk', Arial, sans-serif" font-size="20" fill="#415462">Agentic pipeline demo: summary, action items, risks, follow-up email</text>
+
+  <rect x="110" y="250" width="420" height="260" rx="16" fill="#fdfdfd" stroke="#e0e7ee" />
+  <text x="135" y="290" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#1f4b6e">Trascrizione / appunti</text>
+  <text x="135" y="320" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#62727b">- Obiettivo: MVP entro fine mese</text>
+  <text x="135" y="340" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#62727b">- Rischio: dipendenza API</text>
+  <text x="135" y="360" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#62727b">- Decisione: mock locale</text>
+  <text x="135" y="380" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#62727b">TODO: demo 18/03 (Luca)</text>
+
+  <rect x="580" y="250" width="500" height="120" rx="16" fill="#ffffff" stroke="#e0e7ee" />
+  <text x="605" y="285" font-family="'Space Grotesk', Arial, sans-serif" font-size="18" fill="#10212b">Summary</text>
+  <text x="605" y="315" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#62727b">- MVP entro fine mese</text>
+  <text x="605" y="335" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#62727b">- Mock locale per la demo</text>
+
+  <rect x="580" y="390" width="500" height="120" rx="16" fill="#ffffff" stroke="#e0e7ee" />
+  <text x="605" y="425" font-family="'Space Grotesk', Arial, sans-serif" font-size="18" fill="#10212b">Action Items</text>
+  <text x="605" y="455" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#62727b">- Preparare demo (Luca)</text>
+  <text x="605" y="475" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#62727b">- Aggiornare roadmap (Sara)</text>
+</svg>

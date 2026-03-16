@@ -1,6 +1,11 @@
 ﻿# Meeting Notes Agent
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Made with](https://img.shields.io/badge/made%20with-Spring%20Boot%20%26%20Angular-1f4b6e)
+
 Web app open source per trasformare note di riunione in output operativi: summary, action items, rischi/blocchi e una mail di follow-up. Il progetto dimostra un flusso "agentic" semplice e trasparente, con pipeline multi-step e integrazione LLM opzionale.
+
+![Screenshot](docs/screenshot.svg)
 
 ## Funzionalita principali
 - Summary strutturato in punti
@@ -101,7 +106,7 @@ Nota: conserva sempre la chiave API solo lato backend e non committarla.
 - Template di follow-up personalizzabili
 
 ## Licenza
-Aggiungi una licenza a scelta (es. MIT) prima della pubblicazione.
+Questo progetto e rilasciato sotto licenza MIT.
 
 ---
 

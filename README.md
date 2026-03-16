@@ -101,9 +101,11 @@ Nota: conserva sempre la chiave API solo lato backend e non committarla.
 - Se abiliti l'LLM, i testi vengono inviati al provider configurato.
 
 ## Roadmap
-- Storico analisi locale
-- Export PDF
-- Template di follow-up personalizzabili
+- Storico analisi locale con metadata (data, progetto, owner)
+- Export PDF oltre al Markdown
+- Template di follow-up personalizzabili per team o cliente
+- Semplice scoring di rischi e priorita
+- Selezione lingua output (it/en)
 
 ## Licenza
 Questo progetto e rilasciato sotto licenza MIT.

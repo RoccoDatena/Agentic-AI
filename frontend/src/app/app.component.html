@@ -1,0 +1,63 @@
+<div class="page">
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Agentic AI - Demo didattica</p>
+      <h1>Meeting Notes Agent</h1>
+      <p class="subtitle">Carica appunti, ottieni summary, azioni, rischi e una mail di follow-up.</p>
+    </div>
+    <div class="badge">Pipeline: multi-step</div>
+  </header>
+
+  <section class="panel">
+    <div class="input-col">
+      <label for="transcript">Trascrizione o appunti</label>
+      <textarea id="transcript" [(ngModel)]="transcript" rows="14" placeholder="Incolla qui gli appunti della riunione..."></textarea>
+
+      <div class="actions">
+        <button class="secondary" type="button" (click)="useSample()">Usa esempio</button>
+        <button class="primary" type="button" (click)="runAgent()" [disabled]="loading">{{ loading ? 'Analizzo...' : 'Esegui agente' }}</button>
+      </div>
+
+      <p class="error" *ngIf="error">{{ error }}</p>
+    </div>
+
+    <div class="output-col" *ngIf="result">
+      <div class="meta">Pipeline usata: <strong>{{ result.pipeline }}</strong></div>
+
+      <div class="card">
+        <h3>Summary</h3>
+        <ul>
+          <li *ngFor="let item of result.summary">{{ item }}</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Action Items</h3>
+        <ul>
+          <li *ngFor="let action of result.actionItems">
+            <strong>{{ action.task }}</strong>
+            <span *ngIf="action.owner"> - Owner: {{ action.owner }}</span>
+            <span *ngIf="action.dueDate"> - Scadenza: {{ action.dueDate }}</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Rischi/Blocchi</h3>
+        <ul>
+          <li *ngFor="let risk of result.risks">{{ risk }}</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Follow-up email</h3>
+        <pre>{{ result.followUpEmail }}</pre>
+        <div class="email-actions">
+          <button class="secondary" type="button" (click)="copyEmail()">Copia email</button>
+          <button class="ghost" type="button" (click)="exportMarkdown()">Esporta Markdown</button>
+          <span class="copy-msg" *ngIf="copyMessage">{{ copyMessage }}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

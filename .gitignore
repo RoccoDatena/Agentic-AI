@@ -1,0 +1,19 @@
+﻿# Node
+node_modules/
+
+# Angular
+/dist/
+
+# Java
+/target/
+target/
+
+# Maven local cache (project scoped)
+.m2/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
